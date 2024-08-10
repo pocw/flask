@@ -14,7 +14,6 @@ def stream():
             # Send the data to the client
             yield f"data: {large_text}\n\n"
             # Wait for 0.5 seconds
-            time.sleep(10)
     return Response(generate(), mimetype='text/event-stream')
 
 if __name__ == '__main__':
