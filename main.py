@@ -11,7 +11,6 @@ def stream():
         while True:
             # Generate a string with 10,000 characters
             large_text = 'A' * 100000
-            time.sleep(10)
             # Send the data to the client
             yield f"data: {large_text}\n\n"
             # Wait for 0.5 seconds
